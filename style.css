@@ -70,6 +70,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 90vh;
+  background-attachment: fixed;
 }
 header .container {
   margin: 0 7%;
@@ -114,6 +115,28 @@ section {
   font-size: 1.5rem;
   font-weight: 600;
 }
+.scroll-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+  transition-delay: 0s;
+}
+.scroll-left {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease-out;
+  transition-delay: 0s;
+}
+.scroll-right {
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: all 1s ease-out;
+  transition-delay: 0s;
+}
+.scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 .menu span,
 .trending span,
 .services span,
@@ -155,7 +178,7 @@ section {
 }
 .trending .menu-trending {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -395,6 +418,10 @@ footer p {
   .online-order h2 {
     font-size: 1.8rem;
   }
+  .trending .menu-trending {
+    flex-wrap: wrap;
+  }
+
   .trending .card h3 {
     font-size: 1.6rem;
   }
