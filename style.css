@@ -1,0 +1,572 @@
+:root {
+  --color-primary--: #cf6502;
+  --color--secondary: #1700e2;
+  --dark: #111111;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+nav {
+  background-color: var(--dark);
+}
+nav .container {
+  margin: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  color: #fff;
+}
+.logo-nav {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.logo-nav span {
+  color: var(--color-primary--);
+}
+
+.menu-nav ul {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.menu-nav ul a {
+  color: inherit;
+  transition: 0.3s;
+}
+.menu-nav ul a:hover {
+  opacity: 60%;
+}
+nav .container .cta-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cta-nav button {
+  background-color: var(--color--secondary);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;
+
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+}
+header {
+  margin-bottom: 3rem;
+  background: url(assets/header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+header .container {
+  margin: 0 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.7);
+}
+header .container span {
+  color: var(--color-primary--);
+}
+header .container a {
+  display: grid;
+  place-self: center;
+  margin-top: 15rem;
+  color: inherit;
+  width: fit-content;
+  font-weight: 500;
+  padding: 8px 17px;
+  border: 2px solid var(--color-primary--);
+  text-align: center;
+  transition: 0.5s;
+}
+header .container a:hover {
+  text-shadow: none;
+  background-color: var(--color-primary--);
+}
+section {
+  padding: 4rem 5%;
+  text-align: center;
+}
+.menu h2,
+.trending h2,
+.services h2,
+.table-menu h2,
+.online-order h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.menu span,
+.trending span,
+.services span,
+.table-menu span,
+.online-order span {
+  color: var(--color-primary--);
+}
+.menu .item-menu,
+.trending .menu-trending,
+.table-menu .container-menu,
+.services .menu-services {
+  margin-top: 6rem;
+}
+.menu .item-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.menu .item-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu .item-menu img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.menu .item-menu p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 4rem;
+}
+.trending .menu-trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.trending .menu-trending .card {
+  width: 16rem;
+  max-height: 400px;
+}
+.trending .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+.trending .card h3 {
+  margin-top: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.trending .card p {
+  margin-top: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1rem;
+}
+.trending .card p span {
+  color: var(--color-primary--);
+  font-weight: 500;
+}
+.trending .btn-more {
+  margin-top: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.trending .btn-more a {
+  padding: 0.7rem 1.3rem;
+  width: max-content;
+  height: max-content;
+  background-color: var(--color-primary--);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.trending .btn-more a:hover {
+  background-color: #ac5301;
+}
+section.online-order {
+  margin: 1rem 0;
+  padding: 7rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  color: #fff;
+}
+.online-order a {
+  margin-left: 1.2rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 3px solid #fff;
+  padding: 2.5rem 4rem;
+  transition: 0.3s;
+}
+.online-order a:hover {
+  background-color: var(--color-primary--);
+}
+section.table-menu {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.table-menu h2 {
+  margin-bottom: 4rem;
+}
+.container-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 5rem;
+}
+.container-menu .table {
+  margin-bottom: -1rem;
+  width: 27rem;
+  height: max-content;
+}
+.container-menu .table .content {
+  display: flex;
+  justify-content: space-between;
+}
+.table .content .text {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.table .content .card img {
+  opacity: 0%;
+  position: absolute;
+  transform: translateY(-120px);
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: 1s ease-in;
+}
+.table .text h6,
+.table .price h3 {
+  color: var(--dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.table .text h6 {
+  cursor: pointer;
+  transition: 0.3s;
+  width: fit-content;
+}
+.table .text p {
+  font-size: 1rem;
+  width: 17rem;
+}
+.table .content .price h3 {
+  font-family: "Roboto", sans-serif;
+}
+.table .text .card h6:hover ~ img {
+  opacity: 100%;
+}
+.table .text .card h6:hover {
+  color: var(--color-primary--);
+}
+.services .menu-services {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu-services .list-service,
+.menu-services .list-service-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-services .list-service .content {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+.menu-services .list-service-reverse .content {
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+}
+.menu-services .content {
+  width: 30rem;
+}
+.menu-services .content h3 {
+  font-size: 1.8rem;
+  margin-top: 2.8rem;
+}
+.menu-services .content p {
+  font-size: 1rem;
+  margin-top: 2.8rem;
+}
+.menu-services .list-service .image,
+.menu-services .list-service-reverse .image {
+  height: 19.4rem;
+  width: auto;
+}
+.menu-services .list-service .image img,
+.menu-services .list-service-reverse .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+footer {
+  background-color: var(--dark);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem 0;
+}
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Media Tablet */
+@media (max-width: 768px) {
+  .menu-nav ul {
+    padding-bottom: 1.5rem;
+    display: block;
+    background-color: var(--dark);
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .menu-nav {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    transition: 0.8s;
+    z-index: -1;
+  }
+  .menu-nav.active {
+    top: 85px;
+    z-index: 99;
+  }
+  .menu-nav ul li {
+    padding-top: 2rem;
+  }
+  nav .container #hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  nav .container .icon-burger {
+    width: 2.4rem;
+    border-top: 4px solid #fff;
+  }
+  header .container {
+    margin: 0 10%;
+    font-size: 2rem;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .menu h2,
+  .trending h2,
+  .services h2,
+  .table-menu h2,
+  .online-order h2 {
+    font-size: 1.8rem;
+  }
+  .trending .card h3 {
+    font-size: 1.6rem;
+  }
+  .trending .card p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    text-align: left;
+  }
+  .trending .card p span {
+    color: var(--color-primary--);
+    font-weight: 500;
+  }
+  .trending .btn-more {
+    font-size: 1.2rem;
+  }
+  .trending .btn-more a {
+    padding: 1rem 2rem;
+  }
+  section.online-order {
+    padding: 7rem 5%;
+  }
+  .online-order h2 {
+    width: 16rem;
+  }
+  .online-order a {
+    font-size: 1.4rem;
+    margin-left: 0.6rem;
+    border: 2px solid #fff;
+    padding: 1.2rem 1.7rem;
+  }
+  .container-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .table-menu .table .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-menu .table .card img {
+    position: relative;
+    opacity: 100%;
+    transform: translateY(0);
+  }
+  .services h2 {
+    margin-bottom: -2rem;
+  }
+  .services .menu-services {
+    margin-top: 8rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 2rem;
+  }
+  .menu-services .content {
+    width: fit-content;
+  }
+  .menu-services .list-service {
+    flex-direction: column-reverse;
+  }
+  .menu-services .list-service-reverse {
+    flex-direction: column;
+  }
+  .menu-services .list-service-reverse .content {
+    text-align: left;
+  }
+  .menu-services .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-services .content h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .menu-services .content p {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+  }
+  .menu-services .list-service .image,
+  .menu-services .list-service-reverse .image {
+    height: 20rem;
+    width: auto;
+    width: auto;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Hp */
+@media (max-width: 450px) {
+  nav .container {
+    height: 70px;
+  }
+  .menu-nav.active {
+    top: 65px;
+  }
+  header .container {
+    margin: 0 5%;
+    font-size: 1.5rem;
+  }
+  header .container a {
+    margin-top: 2rem;
+  }
+  section.online-order {
+    padding: 4rem 5%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .trending .btn-more {
+    font-size: 1rem;
+  }
+  .trending .btn-more a {
+    padding: 1rem 1.4rem;
+  }
+  .online-order h2 {
+    width: fit-content;
+  }
+  .online-order a {
+    font-size: 1rem;
+    margin-left: 0.6rem;
+    border: 2px solid #fff;
+    padding: 1rem 1.2rem;
+  }
+  section.table-menu {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+  .table-menu h2 {
+    margin-bottom: 4rem;
+  }
+  .container-menu {
+    gap: 3rem;
+  }
+  .container-menu .table {
+    width: 100%;
+  }
+  .table .text h6,
+  .table .price h3 {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .table .text p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .menu-services .list-service .content,
+  .menu-services .list-service-reverse .content {
+    text-align: justify;
+  }
+  .menu-services .content h3 {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .menu-services .content p {
+    font-size: 1rem;
+    width: 17rem;
+  }
+  .menu-services .list-service .image,
+  .menu-services .list-service-reverse .image {
+    height: 12rem;
+    width: auto;
+  }
+  footer {
+    padding: 1.5rem 0;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
